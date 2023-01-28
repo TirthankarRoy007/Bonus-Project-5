@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json())
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb+srv://Tirtha008:mlpnk3AhOzHztAdO@tirthacluster.psqixlb.mongodb.net/Bonus5", {useNewUrlParser: true})
+mongoose.connect("DB Link", {useNewUrlParser: true})
 .then(()=>console.log("MongoDB is Connected"))
 .catch(err=>console.log(err))
 app.use("/", route)
