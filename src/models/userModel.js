@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const employeeSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
    name: {
     type:String,
     required: true
@@ -15,8 +15,9 @@ const employeeSchema = new mongoose.Schema({
    },
    role: {
     type:String,
+    enum: ["Admin", "Super Admin", "Employee"],
     default: "Employee"
    }
 },{timestamps:true})
 
-module.exports=mongoose.model("Employee",employeeSchema)
+module.exports=mongoose.model("User",userSchema)

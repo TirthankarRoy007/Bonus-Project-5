@@ -18,6 +18,7 @@
   "homepage": "https://github.com/TirthankarRoy007/Bonus-Project-5#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.9.0",
     "nodemon": "^2.0.20"
   }
